@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>Create New Report</h2>
+<mat-dialog-content>
+  <form [formGroup]="createReportForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Meter</mat-label>
+      <mat-select formControlName="meterId" required (selectionChange)="onMeterChange($event)">
+        <mat-option *ngFor="let meter of meters" [value]="meter.id">
+          {{meter.serialNumber}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Report Name</mat-label>
+      <input matInput formControlName="name" required>
+    </mat-form-field>
+
+    <!-- Hidden field to store SerialNumber -->
+    <input type="hidden" formControlName="serialNumber">
+
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="close()">Cancel</button>
+  <button mat-button color="primary" [disabled]="!createReportForm.valid" (click)="onSubmit()">Create</button>
+</mat-dialog-actions>

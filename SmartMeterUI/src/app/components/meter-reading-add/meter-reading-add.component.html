@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Add New Meter Reading</h1>
+<div mat-dialog-content>
+  <form [formGroup]="meterForm">
+    <mat-form-field>
+      <mat-label>Reading Time</mat-label>
+      <input matInput type="datetime-local" formControlName="readingTime">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Voltage</mat-label>
+      <input matInput type="number" formControlName="voltage">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Last Index</mat-label>
+      <input matInput type="number" formControlName="lastIndex">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Power</mat-label>
+      <input matInput type="number" formControlName="power">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="onSubmit()" [disabled]="!meterForm.valid">Save</button>
+</div>

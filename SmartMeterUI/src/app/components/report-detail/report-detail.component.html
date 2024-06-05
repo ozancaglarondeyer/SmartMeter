@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>Report Details</h2>
+<mat-dialog-content>
+  <mat-table [dataSource]="reportDetails" class="mat-elevation-z8">
+    <ng-container matColumnDef="readingTime">
+      <mat-header-cell *matHeaderCellDef> Reading Time </mat-header-cell>
+      <mat-cell *matCellDef="let detail"> {{detail.readingTime | date}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="voltage">
+      <mat-header-cell *matHeaderCellDef> Voltage </mat-header-cell>
+      <mat-cell *matCellDef="let detail"> {{detail.voltage}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="power">
+      <mat-header-cell *matHeaderCellDef> Power </mat-header-cell>
+      <mat-cell *matCellDef="let detail"> {{detail.power}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="lastIndex">
+      <mat-header-cell *matHeaderCellDef> Last Index </mat-header-cell>
+      <mat-cell *matCellDef="let detail"> {{detail.lastIndex}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="['readingTime', 'voltage', 'power', 'lastIndex']"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: ['readingTime', 'voltage', 'power', 'lastIndex'];"></mat-row>
+  </mat-table>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+</mat-dialog-actions>

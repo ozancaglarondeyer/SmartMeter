@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.filter-button {
+  margin-top: 8px; /* Butonu yukarıya doğru çıkartır */
+}
