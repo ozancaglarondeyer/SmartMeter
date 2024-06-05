@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterApi", "Meter.API\MeterApi.csproj", "{B343E84E-2F3C-498C-97DB-0F770A9D95BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportApi", "Report.API\ReportApi.csproj", "{CC91BED7-5996-49D6-A7F1-F7439691EF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{A038A9EC-91B6-455D-8957-DE65C95D75FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B343E84E-2F3C-498C-97DB-0F770A9D95BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B343E84E-2F3C-498C-97DB-0F770A9D95BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B343E84E-2F3C-498C-97DB-0F770A9D95BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B343E84E-2F3C-498C-97DB-0F770A9D95BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC91BED7-5996-49D6-A7F1-F7439691EF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC91BED7-5996-49D6-A7F1-F7439691EF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC91BED7-5996-49D6-A7F1-F7439691EF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC91BED7-5996-49D6-A7F1-F7439691EF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A038A9EC-91B6-455D-8957-DE65C95D75FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A038A9EC-91B6-455D-8957-DE65C95D75FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A038A9EC-91B6-455D-8957-DE65C95D75FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A038A9EC-91B6-455D-8957-DE65C95D75FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CE2C7A3-D74D-40D4-965D-DC02AF9FBFEF}
+	EndGlobalSection
+EndGlobal
